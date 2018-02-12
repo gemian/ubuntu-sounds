@@ -1,3 +1,9 @@
+ubuntu-sounds (0.13+gemian) stretch; urgency=low
+
+  * Building for gemian.
+
+ -- Adam Boardman <adamboardman@gmail.com>  Mon, 12 Feb 2018 11:56:03 +0000
+
 ubuntu-sounds (0.13) natty; urgency=low
 
   * Imported message.ogg and phone-outgoing-calling.ogg from the freedesktop 

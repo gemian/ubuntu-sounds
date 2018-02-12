@@ -1,7 +1,7 @@
 Source: ubuntu-sounds
 Section: gnome
 Priority: optional
-Maintainer: Ubuntu Artwork Team <ubuntu-art@lists.ubuntu.com>
+Maintainer: Adam Boardman <adamboardman@gmail.com>
 Build-Depends: debhelper (>= 5), vorbis-tools
 Standards-Version: 3.7.2
 
