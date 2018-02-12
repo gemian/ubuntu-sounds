@@ -1,0 +1,12 @@
+Source: ubuntu-sounds
+Section: gnome
+Priority: optional
+Maintainer: Ubuntu Artwork Team <ubuntu-art@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), vorbis-tools
+Standards-Version: 3.7.2
+
+Package: ubuntu-sounds
+Architecture: all
+Depends: ${misc:Depends}
+Description: Ubuntu's GNOME audio theme
+ Sounds to spruce up the GNOME desktop environment.

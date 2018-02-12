@@ -1,0 +1,109 @@
+ubuntu-sounds (0.13) natty; urgency=low
+
+  * Imported message.ogg and phone-outgoing-calling.ogg from the freedesktop 
+    sound theme needed for empathy notifications. (LP: #400485)
+
+ -- Ken VanDine <ken.vandine@canonical.com>  Wed, 02 Mar 2011 10:04:05 -0500
+
+ubuntu-sounds (0.12) karmic; urgency=low
+
+  * Drop card_shuffle.wav as its not used by anything any more.
+  * debian/control: Remove conflict against gnome-audio as ubuntu-sounds no
+    longer has any of the same files. (LP: #343288)
+  * Import some sounds from the freedesktop sound theme needed for empathy
+    notifications. (LP: #400485)
+  * debian/copyright: Updated to cover newly added sounds.
+
+ -- Luke Yelavich <themuso@ubuntu.com>  Mon, 12 Oct 2009 10:56:43 +1100
+
+ubuntu-sounds (0.11) karmic; urgency=low
+
+  * Encode dialog-ready into ogg, now that gdm uses libcanberra for the login
+    sound
+  * debian/links: Symbolically link dialog-question to system-ready, for gdm
+    login use
+  * Remove silence at the beginning and end of the bell sound (LP: #430203)
+
+ -- Luke Yelavich <themuso@ubuntu.com>  Wed, 23 Sep 2009 11:38:52 +1000
+
+ubuntu-sounds (0.10) intrepid; urgency=low
+
+  * Remove freedesktop theme. This should be in a stand-alone apckage.
+  * Remove gconf default setting for the sound theme, it is now done in
+    libgnome.
+
+ -- Luke Yelavich <themuso@ubuntu.com>  Fri, 10 Oct 2008 15:05:33 +1100
+
+ubuntu-sounds (0.9) intrepid; urgency=low
+
+  * Set the sound theme name to ubuntu by default.
+
+ -- Luke Yelavich <themuso@ubuntu.com>  Tue, 23 Sep 2008 19:51:13 +1000
+
+ubuntu-sounds (0.8) intrepid; urgency=low
+
+  * Simplify package build process.
+  * Adjust packaging to conform to the new FreeDesktop sound theme spec, using
+    libcanberra, including file renaming, and ogg format conversion at package
+    build time.
+  * Include the freedesktop theme as it is required for the sound events to
+    work. This will be split out into a separate package for Jaunty.
+  * Create symbolic link to preserve question.wav for gdm usage.
+
+ -- Luke Yelavich <themuso@ubuntu.com>  Tue, 23 Sep 2008 15:29:42 +1000
+
+ubuntu-sounds (0.7) intrepid; urgency=low
+
+  * Downsample all sound files from 44.1Khz to 22.05Khz. This saves space
+    on the CDs, and one cannot hear the difference unless they listen
+    carefully.
+  * originals: Make backup copies of the original files for preservation.
+    Eventually ogg files will be usable as sound event files.
+
+ -- Luke Yelavich <themuso@ubuntu.com>  Thu, 07 Aug 2008 11:35:38 +1000
+
+ubuntu-sounds (0.6) feisty; urgency=low
+
+  * debian/control:
+    - changed Maintainer field.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Tue, 27 Feb 2007 18:47:27 +0100
+
+ubuntu-sounds (0.5) edgy; urgency=low
+
+  * New, shorter sounds. (Might fix: #61530)
+  * debian/control:
+    - bump Standards-Version.
+  * debian/compat:
+    - bumped.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Sun,  8 Oct 2006 10:06:27 +0200
+
+ubuntu-sounds (0.4) edgy; urgency=low
+
+  * Added Peter Savage's startup and shutdown sounds.
+
+ -- Frank Schoep <frank@ffnn.nl>  Wed,  6 Sep 2006 22:03:07 +0200
+
+ubuntu-sounds (0.3) warty; urgency=low
+
+  * Preserve symlinks when installing sounds (Closes: Warty#1819)
+  * Use a native version number
+
+ -- Matt Zimmerman <mdz@canonical.com>  Mon, 27 Sep 2004 17:50:17 -0700
+
+ubuntu-sounds (0.2-1) warty; urgency=low
+
+  * conflicts with gnome-audio
+  * raised volume of startup.wav slightly to match shutdown.wav
+  * decreased volume of shutdown.wav slightly to match startup.wav
+  * increased stereo imaging of shutdown.wav
+
+ -- Nathaniel McCallum <npmccallum@canonical.com>  Thu, 23 Sep 2004 08:22:42 -0400
+
+ubuntu-sounds (0.1-1) warty; urgency=low
+
+  * Initial Release.  Covers all the sounds from the gnome-audio package.
+
+ -- Nathaniel McCallum <npmccallum@canonical.com>  Mon, 20 Sep 2004 13:18:17 -0400
+
